@@ -1,0 +1,10 @@
+<main class="flex flex-col gap-2 ml-[70px]">
+   <app-navbar   ></app-navbar>
+    <div
+        class="grid items-center gap-3 xs:grid-cols-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-transparent rounded-md  text-sm px-1 py-1">
+        @for (item of this.getFilterData(); track item.id) {
+        <app-card [item]="item" ></app-card>
+        }
+   </div>
+ 
+</main>

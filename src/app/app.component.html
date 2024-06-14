@@ -1,0 +1,7 @@
+<main class="h-full min-h-[100vh] bg-slate-50 px-5 ">
+  <app-side-bar [isMenuOpen]="isMenuOpen" (isMenuOpenChange)="updateMenuOpen($event)"
+    [genericHamburgerLine]="genericHamburgerLine"
+    [class]="toggleMenu + (isMenuOpen? 'w-[calc(100%-40px)]  sm:w-2/5 lg:w-1/5 border-slate-50 sm:border-r-2 sm:border-gray-200  ' : 'w-[60px] ')"></app-side-bar>
+
+  <router-outlet></router-outlet>
+</main>

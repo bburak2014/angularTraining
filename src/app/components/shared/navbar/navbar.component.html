@@ -1,0 +1,10 @@
+ 
+<nav class="grid items-center gap-3 xs:grid-cols-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-8 bg-slate-100 rounded-md border text-sm px-4 py-4">
+    <div class="font-bold sm:col-span-2 md:col-span-3  xl:col-span-1">Filter Characters </div>
+    <app-text-input class="xl:col-span-2" [placeHolder]="'Name'" [id]="'name'"   ></app-text-input>  
+    <app-text-input class="xl:col-span-2" [placeHolder]="'Type'" [id]="'type'" ></app-text-input>  
+    <app-select-box class="xl:col-span-1" [defaultSelectboxOption]="'Status'" [id]="'status'"  [selectBoxOptions]="['Alive', 'Dead']"></app-select-box>
+    <app-select-box class="xl:col-span-1" [defaultSelectboxOption]="'Gender'" [id]="'gender'" [selectBoxOptions]="['Male', 'Female']"></app-select-box>
+    <app-search-button class="xl:col-span-1" ></app-search-button>
+ 
+  </nav> 

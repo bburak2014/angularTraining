@@ -1,0 +1,9 @@
+<div class="inset-y-0 right-0 flex items-center w-full">
+  <select id="select-box" name="select-box" (change)="handleSelect($event)"
+    class="h-full w-full rounded-md border-0 py-3 px-3 text-gray-500 sm:text-sm">
+    <option [attr.disabled]="isSelectDisabled">{{defaultSelectboxOption}}</option>
+    @for (os of selectBoxOptions; track os) {
+    <option>{{ os }}</option>
+    }
+  </select>
+</div>
